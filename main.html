@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Work+Sans:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#747684",
+                        "surface-dim": "#d9dadc",
+                        "surface-variant": "#e2e2e4",
+                        "primary": "#002068",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b5c4ff",
+                        "surface-container-low": "#f3f3f5",
+                        "surface-container": "#eeeef0",
+                        "surface-bright": "#f9f9fb",
+                        "on-secondary-container": "#6e5c00",
+                        "primary-fixed-dim": "#b5c4ff",
+                        "on-primary-fixed-variant": "#153ea3",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e8e8ea",
+                        "secondary": "#705d00",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "secondary-container": "#fcd400",
+                        "on-secondary-fixed": "#221b00",
+                        "background": "#f9f9fb",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffe16d",
+                        "inverse-surface": "#2f3132",
+                        "on-surface-variant": "#444653",
+                        "secondary-fixed-dim": "#e9c400",
+                        "inverse-on-surface": "#f0f0f2",
+                        "primary-fixed": "#dce1ff",
+                        "on-primary-container": "#8aa4ff",
+                        "on-surface": "#1a1c1d",
+                        "primary-container": "#003399",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#00164e",
+                        "surface-container-highest": "#e2e2e4",
+                        "tertiary-fixed": "#e4e2e1",
+                        "error-container": "#ffdad6",
+                        "surface": "#f9f9fb",
+                        "on-tertiary-container": "#a9a7a7",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#3d3d3d",
+                        "tertiary": "#272727",
+                        "outline-variant": "#c4c5d5",
+                        "surface-tint": "#3557bc",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-background": "#1a1c1d",
+                        "on-secondary-fixed-variant": "#544600"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "caption": ["Inter"],
+                        "label-sm": ["Work Sans"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400"}],
+                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #f9f9fb;
+            color: #1a1c1d;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .architectural-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+        .v-card-container {
+            max-width: 480px;
+            height: 100%;
+            margin: 0 auto;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid #e2e2e4;
+            border-right: 1px solid #e2e2e4;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-background">
+<!-- Compact Navigation Header (TopAppBar Mapping) -->
+<header class="bg-white border-b border-slate-200 flex justify-between items-center w-full px-6 py-4">
+<div class="text-xl font-bold tracking-tighter text-[#003399]">GEZE</div>
+<button class="text-slate-500 hover:bg-slate-50 transition-all duration-200 p-2 rounded">
+<span class="material-symbols-outlined">share</span>
+</button>
+</header>
+<main class="v-card-container flex-1 flex flex-col px-8 pt-8 pb-4">
+<!-- Profile Section -->
+<div class="flex flex-col items-center text-center mb-6">
+<div class="relative mb-4">
+<div class="w-24 h-24 overflow-hidden rounded-lg border border-surface-variant p-1">
+<img alt="Brian CLarke" class="w-full h-full object-cover rounded" data-alt="Professional studio portrait of a confident middle-aged man in a sharp navy suit with clean lighting and neutral grey architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnxDCyaATzIyCLwmIg_qHiyAZaFodpvFwANhXUbBeAdtnF4uXGx_TFmigIBZidOvyuM909rvIZEwLJXwVcBsdUq7-ITN5XxgY-VFhK49cv2bPu8lXShj6dbsNf9mwLZWWh_yTl4sAw2CjVPr53kvbfL82COvCMZNvi_jKGa2xzYRWJGmy_ILwEuJH54i818QmyWr_ktVI0v974kFF4uGPg6LrTueX6kymWQ-AF5MxIIHNYZkYBgEDTHHTAY6zKZ0Qqh_hXNtSRcrhX"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary-container p-1 rounded">
+<span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<h1 class="font-headline-md text-on-surface mb-1">Marcus Weber</h1>
+<p class="font-label-sm text-outline tracking-wider uppercase">Senior Project Manager</p>
+</div>
+<!-- Contact Quick List -->
+<div class="space-y-3 mb-8">
+<div class="flex items-center p-3 rounded-lg border border-surface-container hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary mr-4">call</span>
+<span class="font-body-md text-on-surface">+49 7152 203-0</span>
+</div>
+<div class="flex items-center p-3 rounded-lg border border-surface-container hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary mr-4">mail</span>
+<span class="font-body-md text-on-surface">m.weber@geze.com</span>
+</div>
+<div class="flex items-center p-3 rounded-lg border border-surface-container hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary mr-4">hub</span>
+<span class="font-body-md text-on-surface">linkedin.com/in/mweber-geze</span>
+</div>
+</div>
+<!-- Action Stack -->
+<div class="mt-auto space-y-3">
+<!-- Primary Action -->
+<button class="w-full bg-primary-container text-white py-4 rounded-lg font-label-sm tracking-widest flex items-center justify-center hover:opacity-90 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined mr-2" style="font-variation-settings: 'FILL' 1;">person_add</span>
+                SAVE CONTACT
+            </button>
+<!-- Secondary Actions -->
+<div class="flex gap-3">
+<button class="flex-1 border border-surface-variant text-on-surface py-3 rounded-lg font-label-sm flex items-center justify-center hover:bg-slate-50 transition-all">
+<span class="material-symbols-outlined mr-2">phone_in_talk</span>
+                    CALL
+                </button>
+<button class="flex-1 border border-surface-variant text-on-surface py-3 rounded-lg font-label-sm flex items-center justify-center hover:bg-slate-50 transition-all">
+<span class="material-symbols-outlined mr-2">alternate_email</span>
+                    EMAIL
+                </button>
+</div>
+</div>
+<!-- Technical Detail Footer -->
+<div class="mt-8 pt-4 border-t border-surface-variant flex justify-between items-center opacity-40">
+<span class="text-[10px] font-label-sm">GEZE GMBH • LEONBERG</span>
+<span class="text-[10px] font-label-sm">v.4.2.0</span>
+</div>
+</main>
+<!-- Bottom Navigation Component (BottomNavBar Mapping) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-white border-t border-slate-200 px-4 md:hidden">
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider">Call</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider">Email</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#003399]">
+<span class="material-symbols-outlined" data-icon="person_add" style="font-variation-settings: 'FILL' 1;">person_add</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider">Save</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="hub">hub</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider">Connect</span>
+</div>
+</nav>
+</body></html>
